@@ -1,0 +1,10 @@
+{application,twitter,
+             [{applications,[kernel,stdlib,elixir,logger]},
+              {description,"twitter"},
+              {modules,['Elixir.Twitter','Elixir.Twitter.Client.User',
+                        'Elixir.Twitter.Client.UserSupervisor',
+                        'Elixir.Twitter.Server.Engine',
+                        'Elixir.Twitter.Server.Memory']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {extra_applications,[logger]}]}.
